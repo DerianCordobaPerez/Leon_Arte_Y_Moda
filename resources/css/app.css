@@ -3,4 +3,4 @@
 
 /* Components */
 @import "components/navbar.module.css";
-@import "components/footer.module.css";
+@import "components/footer.css";

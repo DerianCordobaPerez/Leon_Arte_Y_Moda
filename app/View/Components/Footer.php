@@ -21,7 +21,7 @@ class Footer extends Component
      *
      * @return \Illuminate\Contracts\View\View|\Closure|string
      */
-    public function render()
+    public function render(): \Illuminate\Contracts\View\View|\Closure|string
     {
         return view('components.footer');
     }
