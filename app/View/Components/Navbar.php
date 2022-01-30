@@ -21,7 +21,7 @@ class Navbar extends Component
      *
      * @return \Illuminate\Contracts\View\View|\Closure|string
      */
-    public function render()
+    public function render(): \Illuminate\Contracts\View\View|string|\Closure
     {
         return view('components.navbar');
     }

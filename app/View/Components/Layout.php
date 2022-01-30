@@ -13,7 +13,7 @@ class Layout extends Component
      *
      * @return void
      */
-    public function __construct(string $title)
+    public function __construct(string $title = 'Leon Arte y Moda')
     {
         $this->title = $title;
     }
@@ -23,7 +23,7 @@ class Layout extends Component
      *
      * @return \Illuminate\Contracts\View\View|\Closure|string
      */
-    public function render()
+    public function render(): \Illuminate\Contracts\View\View|string|\Closure
     {
         return view('components.layout');
     }
