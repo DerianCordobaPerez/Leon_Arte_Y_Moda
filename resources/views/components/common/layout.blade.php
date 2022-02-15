@@ -1,6 +1,6 @@
 <x-layout :title="$title">
     <!-- Css -->
-    <x-slot name="css">
+    <x-slot:css>
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </x-slot>
 
@@ -15,7 +15,7 @@
     <x-footer />
 
     <!-- Scripts -->
-    <x-slot name="javascript">
+    <x-slot:javascript>
 
     </x-slot>
 </x-layout>

@@ -1,11 +1,11 @@
 <x-layout :title="$title">
-    <x-slot name="css">
-
+    <x-slot:css>
+        l
     </x-slot>
 
 
 
-    <x-slot name="javascript">
-
+    <x-slot:javascript>
+        l
     </x-slot>
 </x-layout>
