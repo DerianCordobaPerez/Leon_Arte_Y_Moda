@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Dashboard;
 
 use Illuminate\View\Component;
 
@@ -21,8 +21,8 @@ class Footer extends Component
      *
      * @return \Illuminate\Contracts\View\View|\Closure|string
      */
-    public function render(): \Illuminate\Contracts\View\View|\Closure|string
+    public function render()
     {
-        return view('components.footer');
+        return view('components.dashboard.footer');
     }
 }
