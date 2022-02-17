@@ -8,14 +8,14 @@
     </x-slot>
 
     <!-- Navbar component -->
-    <x-navbar />
+    <x-common.navbar />
 
     <main>
         {{ $slot }}
     </main>
 
     <!-- Footer component -->
-    {{-- <x-footer /> --}}
+    {{-- <x-common.footer /> --}}
 
     <!-- Scripts -->
     <x-slot:js>

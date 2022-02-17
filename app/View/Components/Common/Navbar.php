@@ -1,7 +1,9 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Common;
 
+use Closure;
+use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
 class Navbar extends Component
@@ -19,10 +21,10 @@ class Navbar extends Component
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
+     * @return View|Closure|string
      */
-    public function render(): \Illuminate\Contracts\View\View|string|\Closure
+    public function render(): View|string|Closure
     {
-        return view('components.navbar');
+        return view('components.common.navbar');
     }
 }

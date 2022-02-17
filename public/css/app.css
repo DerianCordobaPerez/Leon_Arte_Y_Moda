@@ -43,7 +43,7 @@ nav.navbar {
     position: absolute;
 }
 
-.header .background {
+.header {
     width: 100%;
     height: 100vh;
     background: linear-gradient(#0008, #0008), url("https://www.10wallpaper.com/wallpaper/1680x1050/1407/beauty_fashion_woman-Photo_background_wallpaper_1680x1050.jpg") no-repeat fixed;
