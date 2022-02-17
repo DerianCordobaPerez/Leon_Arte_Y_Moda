@@ -1,0 +1,35 @@
+.navbar-scroll {
+    transition: all 0.7s ease-in-out;
+    background-color: #670b6a;
+    animation-direction: alternate, reverse, normal;
+    height: 60px !important;
+}
+
+.navbar-scroll img {
+    width: 50px;
+}
+
+.logo-navbar {
+    width: 80px;
+    filter: invert(1);
+    transition: all 0.5s;
+}
+
+a.nav-link {
+    color: #fff;
+}
+
+a.nav-link:hover {
+    color: #bbb;
+}
+
+.social-networks ul li,
+a {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+nav.navbar {
+    height: 100px;
+}
