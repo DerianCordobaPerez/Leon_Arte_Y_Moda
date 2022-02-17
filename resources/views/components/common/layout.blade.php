@@ -7,15 +7,15 @@
     <!-- Navbar component -->
     <x-navbar />
 
-    <main class="container p-2">
+    <main>
         {{ $slot }}
     </main>
 
     <!-- Footer component -->
-    <x-footer />
+    {{-- <x-footer /> --}}
 
     <!-- Scripts -->
     <x-slot:javascript>
-
+        <script src="{{ asset('js/app.js')}}"></script>
     </x-slot>
 </x-layout>
