@@ -1,14 +1,11 @@
-.header .fondo {
+.header .background {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(#0008, #0008), url(https://www.10wallpaper.com/wallpaper/1680x1050/1407/beauty_fashion_woman-Photo_background_wallpaper_1680x1050.jpg);
-    background-repeat: no-repeat;
+    background: linear-gradient(#0008, #0008), url("https://www.10wallpaper.com/wallpaper/1680x1050/1407/beauty_fashion_woman-Photo_background_wallpaper_1680x1050.jpg") no-repeat fixed;
     background-size: cover;
-    background-attachment: fixed;
     border-radius: 0 0 0 250px;
     display: flex;
     align-items: center;
-    margin: 0;
 }
 
 .text-title h1 {
@@ -22,9 +19,7 @@
     width: 100px;
 }
 
-
-/* about title */
-
+/* About title */
 .mision-vision-container .about-title {
     margin-bottom: 40px;
     text-align: center;
@@ -45,9 +40,7 @@
     object-fit: cover;
 }
 
-
-/* botones de header */
-
+/* Header buttons */
 .btn-welcome {
     width: 200px;
     padding: 10px 0;
@@ -69,8 +62,7 @@
 }
 
 
-/*  Animaciones de botones */
-
+/*  Buttons animations */
 .btn-welcome:hover:nth-child(1) {
     cursor: pointer;
     animation: animated .5s ease-in 1;
@@ -78,7 +70,7 @@
 
 @keyframes animated {
     from {
-        box-shadow: 0 0 0 0px #620b8acc;
+        box-shadow: 0 0 0 0 #620b8acc;
     }
     to {
         box-shadow: 0 0 0 40px #620b8a1e;
