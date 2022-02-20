@@ -12,7 +12,6 @@
     "devDependencies": {
         "@popperjs/core": "^2.10.2",
         "axios": "^0.21",
-        "bootstrap": "^5.1.3",
         "bootstrap-icons": "^1.7.2",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
@@ -22,9 +21,29 @@
         "sass-loader": "^11.0.1",
         "vue": "^2.6.12",
         "vue-loader": "^15.9.8",
-        "vue-template-compiler": "^2.6.12"
+        "vue-template-compiler": "^2.6.12",
+        "browser-sync": "^2.26.7",
+        "compass-mixins": "^0.12.10"
     },
     "dependencies": {
-        "vue-router": "^4.0.12"
+        "vue-router": "^4.0.12",
+        "@mdi/font": "^3.7.95",
+        "bootstrap": "^4.4.1",
+        "bootstrap-maxlength": "^1.6.0",
+        "chart.js": "^2.8.0",
+        "codemirror": "^5.48.0",
+        "flag-icon-css": "^3.3.0",
+        "jquery": "3.4.1",
+        "jvectormap": "^2.0.4",
+        "moment": "^2.24.0",
+        "owl.carousel": "^2.3.4",
+        "perfect-scrollbar": "^1.5.0",
+        "popper.js": "^1.16.1",
+        "progressbar.js": "^1.0.1",
+        "pwstabs": "^1.4.0",
+        "select2": "^4.0.7",
+        "select2-bootstrap-theme": "0.1.0-beta.10",
+        "twbs-pagination": "^1.4.1",
+        "typeahead.js": "^0.11.1"
     }
 }
