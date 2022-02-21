@@ -17,17 +17,38 @@
 
 a.nav-link {
     color: #fff;
+    position: relative;
+    margin-left: 20px;
 }
 
 a.nav-link:hover {
-    color: #bbb;
+    color: #fff;
+}
+
+a.nav-link:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 32px;
+    transition: all .5s ease;
+}
+
+a.nav-link:hover:after {
+    width: 100%;
+}
+
+a.nav-link:focus {
+    color: #fff;
 }
 
 .social-networks ul li,
 a {
     color: #fff;
     font-size: 20px;
-    margin-left: 10px;
 }
 
 nav.navbar {

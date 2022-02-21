@@ -23,4 +23,9 @@ class HomeController extends Controller
     {
         return $this->render('about');
     }
+
+    public function gallery(): View|Factory
+    {
+        return $this->render('gallery');
+    }
 }
