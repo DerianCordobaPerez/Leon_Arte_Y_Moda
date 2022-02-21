@@ -7,29 +7,30 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="bi bi-house-fill"></i> Inicio</a>
+                    <a href="#" class="nav-link px-0">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link px-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorias <i class="bi bi-chevron-down fs-6"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link px-0" href="{{route('gallery')}}">Galeria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-grid-fill"></i> Categorias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-images"></i> Galeria</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-telephone-outbound-fill"></i> Contáctanos</a>
+                    <a class="nav-link px-0" href="#">Contáctanos</a>
                 </li>
             </ul>
         </div>
 
-        <div class="social-networks">
-            <ul class="d-flex m-0">
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-twitter"></i></a>
-            </ul>
-        </div>
     </div>
 </nav>
