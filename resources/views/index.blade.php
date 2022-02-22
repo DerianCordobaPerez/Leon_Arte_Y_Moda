@@ -32,30 +32,51 @@
         </div>
 
         <section class="d-flex justify-content-evenly">
-            <div class="text-center size-mvv d-flex flex-column align-items-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                <img src="{{asset('images/fondo.jpg')}}" class="card-img-top" alt="...">
+            <div class="text-center size-mvv d-flex flex-column align-items-center" data-aos="fade-up"
+                data-aos-easing="linear" data-aos-duration="1500">
+                <img src="{{ asset('images/fondo.jpg') }}" class="card-img-top" alt="...">
                 <h4 class="my-3">Mision</h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea exercitationem quaerat iusto optio iure adipisci autem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea exercitationem
+                quaerat iusto optio iure adipisci autem.
             </div>
 
-            <div class="text-center size-mvv d-flex flex-column align-items-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                <img src="{{asset('images/fondo.jpg')}}" class="card-img-top" alt="...">
+            <div class="text-center size-mvv d-flex flex-column align-items-center" data-aos="fade-down"
+                data-aos-easing="linear" data-aos-duration="1500">
+                <img src="{{ asset('images/fondo.jpg') }}" class="card-img-top" alt="...">
                 <h4 class="my-3">Vision</h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea exercitationem quaerat iusto optio iure adipisci autem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea exercitationem
+                quaerat iusto optio iure adipisci autem.
             </div>
 
-            <div class="text-center size-mvv d-flex flex-column align-items-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                <img src="{{asset('images/fondo.jpg')}}" class="card-img-top" alt="...">
+            <div class="text-center size-mvv d-flex flex-column align-items-center" data-aos="fade-up"
+                data-aos-easing="linear" data-aos-duration="1500">
+                <img src="{{ asset('images/fondo.jpg') }}" class="card-img-top" alt="...">
                 <h4 class="my-3">Valores</h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea exercitationem quaerat iusto optio iure adipisci autem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea exercitationem
+                quaerat iusto optio iure adipisci autem.
             </div>
+
+           
         </section>
+
+        
     </div>
+
+     {{-- Slides --}}
+     <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+        <div><h3>1</h3></div>
+        <div><h3>2</h3></div>
+        <div><h3>3</h3></div>
+        <div><h3>4</h3></div>
+        <div><h3>5</h3></div>
+        <div><h3>6</h3></div>
+      </div>
+    {{-- end slides --}}
 
     <x-slot:js>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
-    </x-slot>
+        </x-slot>
 </x-common.layout>

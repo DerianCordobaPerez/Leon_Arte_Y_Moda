@@ -6,7 +6,11 @@
 
 @import "components/navbar.css";
 @import "components/footer.css";
+
+/* Pages  */
+
 @import "homepage.css";
+@import "gallery.css";
 
 /* Icons */
 
