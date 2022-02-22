@@ -86,18 +86,44 @@ nav.navbar {
     width: 100px;
 }
 
+
 /* About title */
+
 .mision-vision-container .about-title {
     margin-bottom: 40px;
     text-align: center;
 }
 
+.mision-vision-container .about-title h1#title {
+    font-size: 55px;
+    color: #670b6a;
+    font-style: italic;
+    font-family: serif;
+    font-weight: bold;
+}
+
 .mision-vision-container .about-title h1 {
-    font-size: 40px;
+    font-size: 35px;
+    color: #949294;
+}
+
+.subtitle-mvv {
+    font-weight: bold;
+    color: #670b6a;
+    font-family: serif;
+    font-style: italic;
 }
 
 .size-mvv {
     width: 25%;
+    height: 400px;
+    padding: 10px;
+    box-shadow: 0px 25px 30px 1px rgba(0, 0, 0, 0.28);
+}
+
+.size-mvv p {
+    color: #949294;
+    font-size: 20px;
 }
 
 .size-mvv img {
@@ -108,7 +134,9 @@ nav.navbar {
        object-fit: cover;
 }
 
+
 /* Header buttons */
+
 .btn-welcome {
     width: 200px;
     padding: 10px 0;
@@ -131,6 +159,7 @@ nav.navbar {
 
 
 /*  Buttons animations */
+
 .btn-welcome:hover:nth-child(1) {
     cursor: pointer;
     -webkit-animation: animated .5s ease-in 1;
@@ -154,7 +183,6 @@ nav.navbar {
         box-shadow: 0 0 0 40px #620b8a1e;
     }
 }
-
 /* Bootstrap */
 
 /* Components */
