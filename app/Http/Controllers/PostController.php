@@ -113,14 +113,14 @@ class PostController extends Controller
                 $post->slug = $request->title.'-'.rand(1, 100);
             }
 
+            if($request->has('pictures')) {
+                $post->pictures()->sync($request->pictures);
+            }
+
             $post->update([
                 'title' => $request->title,
                 'body' => $request->body,
             ]);
-
-            if($request->has('pictures')) {
-                $post->pictures()->sync($request->pictures);
-            }
 
             return redirect()->route('posts.index')->with('success', 'Publicación actualizada con éxito');
         });
