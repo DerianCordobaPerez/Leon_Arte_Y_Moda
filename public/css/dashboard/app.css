@@ -18627,6 +18627,181 @@ div.tagsinput span.tag a {
 
 /*-------------------------------------------------------------------*/
 /* === Landing screens === */
+/* Auth */
+.auth.login-bg {
+  background: url(/images/Login_bg.jpg?9bbb578e48d1dbd9c7b727943c794162);
+  background-size: cover;
+}
+.auth .login-half-bg {
+  background: url(/images/login-bg.jpg?7593b671c1b31531723137381c66ebfd);
+  background-size: cover;
+}
+.auth.register-half-bg {
+  background: url(/images/Login_bg2.jpg?b77d72862296b65f998aa138d57bc974);
+  background-size: cover;
+}
+.auth.lock-full-bg {
+  background: url(/images/lockscreen-bg.jpg?5f5074b5d05fd6cd07f5eb4269be67a1);
+  background-size: cover;
+}
+.auth .lock-profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
+.auth .auth-form-dark {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+.auth .auth-form-dark .form-control, .auth .auth-form-dark .asColorPicker-input, .auth .auth-form-dark .dataTables_wrapper select, .dataTables_wrapper .auth .auth-form-dark select, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=text],
+.auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row select,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark select, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=number], .auth .auth-form-dark .select2-container--default .select2-selection--single, .select2-container--default .auth .auth-form-dark .select2-selection--single, .auth .auth-form-dark .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .auth .auth-form-dark .select2-search__field, .auth .auth-form-dark .typeahead,
+.auth .auth-form-dark .tt-query,
+.auth .auth-form-dark .tt-hint {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+.auth .auth-form-dark .form-control:-ms-input-placeholder, .auth .auth-form-dark .asColorPicker-input:-ms-input-placeholder, .auth .auth-form-dark .dataTables_wrapper select:-ms-input-placeholder, .dataTables_wrapper .auth .auth-form-dark select:-ms-input-placeholder, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:-ms-input-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=text]:-ms-input-placeholder,
+.auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row select:-ms-input-placeholder,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark select:-ms-input-placeholder, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:-ms-input-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=number]:-ms-input-placeholder, .auth .auth-form-dark .select2-container--default .select2-selection--single:-ms-input-placeholder, .select2-container--default .auth .auth-form-dark .select2-selection--single:-ms-input-placeholder, .auth .auth-form-dark .select2-container--default .select2-selection--single .select2-search__field:-ms-input-placeholder, .select2-container--default .select2-selection--single .auth .auth-form-dark .select2-search__field:-ms-input-placeholder, .auth .auth-form-dark .typeahead:-ms-input-placeholder,
+.auth .auth-form-dark .tt-query:-ms-input-placeholder,
+.auth .auth-form-dark .tt-hint:-ms-input-placeholder {
+  color: #ffffff;
+}
+.auth .auth-form-dark .form-control:-moz-placeholder, .auth .auth-form-dark .asColorPicker-input:-moz-placeholder, .auth .auth-form-dark .dataTables_wrapper select:-moz-placeholder, .dataTables_wrapper .auth .auth-form-dark select:-moz-placeholder, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:-moz-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=text]:-moz-placeholder,
+.auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row select:-moz-placeholder,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark select:-moz-placeholder, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:-moz-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=number]:-moz-placeholder, .auth .auth-form-dark .select2-container--default .select2-selection--single:-moz-placeholder, .select2-container--default .auth .auth-form-dark .select2-selection--single:-moz-placeholder, .auth .auth-form-dark .select2-container--default .select2-selection--single .select2-search__field:-moz-placeholder, .select2-container--default .select2-selection--single .auth .auth-form-dark .select2-search__field:-moz-placeholder, .auth .auth-form-dark .typeahead:-moz-placeholder,
+.auth .auth-form-dark .tt-query:-moz-placeholder,
+.auth .auth-form-dark .tt-hint:-moz-placeholder {
+  color: #ffffff;
+}
+.auth .auth-form-dark .form-control::-moz-placeholder, .auth .auth-form-dark .asColorPicker-input::-moz-placeholder, .auth .auth-form-dark .dataTables_wrapper select::-moz-placeholder, .dataTables_wrapper .auth .auth-form-dark select::-moz-placeholder, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]::-moz-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=text]::-moz-placeholder,
+.auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row select::-moz-placeholder,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark select::-moz-placeholder, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]::-moz-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=number]::-moz-placeholder, .auth .auth-form-dark .select2-container--default .select2-selection--single::-moz-placeholder, .select2-container--default .auth .auth-form-dark .select2-selection--single::-moz-placeholder, .auth .auth-form-dark .select2-container--default .select2-selection--single .select2-search__field::-moz-placeholder, .select2-container--default .select2-selection--single .auth .auth-form-dark .select2-search__field::-moz-placeholder, .auth .auth-form-dark .typeahead::-moz-placeholder,
+.auth .auth-form-dark .tt-query::-moz-placeholder,
+.auth .auth-form-dark .tt-hint::-moz-placeholder {
+  color: #ffffff;
+}
+.auth .auth-form-dark .form-control::-webkit-input-placeholder, .auth .auth-form-dark .asColorPicker-input::-webkit-input-placeholder, .auth .auth-form-dark .dataTables_wrapper select::-webkit-input-placeholder, .dataTables_wrapper .auth .auth-form-dark select::-webkit-input-placeholder, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]::-webkit-input-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=text]::-webkit-input-placeholder,
+.auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row select::-webkit-input-placeholder,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark select::-webkit-input-placeholder, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]::-webkit-input-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=number]::-webkit-input-placeholder, .auth .auth-form-dark .select2-container--default .select2-selection--single::-webkit-input-placeholder, .select2-container--default .auth .auth-form-dark .select2-selection--single::-webkit-input-placeholder, .auth .auth-form-dark .select2-container--default .select2-selection--single .select2-search__field::-webkit-input-placeholder, .select2-container--default .select2-selection--single .auth .auth-form-dark .select2-search__field::-webkit-input-placeholder, .auth .auth-form-dark .typeahead::-webkit-input-placeholder,
+.auth .auth-form-dark .tt-query::-webkit-input-placeholder,
+.auth .auth-form-dark .tt-hint::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.auth .auth-form-light {
+  background: #ffffff;
+}
+.auth .auth-form-light select {
+  color: #4b5564;
+}
+.auth .auth-form-light .input-group .form-control:focus, .auth .auth-form-light .asColorPicker-wrap .form-control:focus, .auth .auth-form-light .input-group .asColorPicker-input:focus, .auth .auth-form-light .asColorPicker-wrap .asColorPicker-input:focus, .auth .auth-form-light .input-group .dataTables_wrapper select:focus, .dataTables_wrapper .auth .auth-form-light .input-group select:focus, .auth .auth-form-light .asColorPicker-wrap .dataTables_wrapper select:focus, .dataTables_wrapper .auth .auth-form-light .asColorPicker-wrap select:focus, .auth .auth-form-light .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .input-group input[type=text]:focus, .auth .auth-form-light .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .asColorPicker-wrap input[type=text]:focus,
+.auth .auth-form-light .input-group .jsgrid .jsgrid-table .jsgrid-filter-row select:focus,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .input-group select:focus,
+.auth .auth-form-light .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row select:focus,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .asColorPicker-wrap select:focus, .auth .auth-form-light .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .input-group input[type=number]:focus, .auth .auth-form-light .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .asColorPicker-wrap input[type=number]:focus, .auth .auth-form-light .input-group .select2-container--default .select2-selection--single:focus, .select2-container--default .auth .auth-form-light .input-group .select2-selection--single:focus, .auth .auth-form-light .asColorPicker-wrap .select2-container--default .select2-selection--single:focus, .select2-container--default .auth .auth-form-light .asColorPicker-wrap .select2-selection--single:focus, .auth .auth-form-light .input-group .select2-container--default .select2-selection--single .select2-search__field:focus, .select2-container--default .select2-selection--single .auth .auth-form-light .input-group .select2-search__field:focus, .auth .auth-form-light .asColorPicker-wrap .select2-container--default .select2-selection--single .select2-search__field:focus, .select2-container--default .select2-selection--single .auth .auth-form-light .asColorPicker-wrap .select2-search__field:focus, .auth .auth-form-light .input-group .typeahead:focus, .auth .auth-form-light .asColorPicker-wrap .typeahead:focus,
+.auth .auth-form-light .input-group .tt-query:focus,
+.auth .auth-form-light .asColorPicker-wrap .tt-query:focus,
+.auth .auth-form-light .input-group .tt-hint:focus,
+.auth .auth-form-light .asColorPicker-wrap .tt-hint:focus, .auth .auth-form-light .input-group .form-control:active, .auth .auth-form-light .asColorPicker-wrap .form-control:active, .auth .auth-form-light .input-group .asColorPicker-input:active, .auth .auth-form-light .asColorPicker-wrap .asColorPicker-input:active, .auth .auth-form-light .input-group .dataTables_wrapper select:active, .dataTables_wrapper .auth .auth-form-light .input-group select:active, .auth .auth-form-light .asColorPicker-wrap .dataTables_wrapper select:active, .dataTables_wrapper .auth .auth-form-light .asColorPicker-wrap select:active, .auth .auth-form-light .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:active, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .input-group input[type=text]:active, .auth .auth-form-light .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:active, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .asColorPicker-wrap input[type=text]:active,
+.auth .auth-form-light .input-group .jsgrid .jsgrid-table .jsgrid-filter-row select:active,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .input-group select:active,
+.auth .auth-form-light .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row select:active,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .asColorPicker-wrap select:active, .auth .auth-form-light .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:active, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .input-group input[type=number]:active, .auth .auth-form-light .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:active, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-light .asColorPicker-wrap input[type=number]:active, .auth .auth-form-light .input-group .select2-container--default .select2-selection--single:active, .select2-container--default .auth .auth-form-light .input-group .select2-selection--single:active, .auth .auth-form-light .asColorPicker-wrap .select2-container--default .select2-selection--single:active, .select2-container--default .auth .auth-form-light .asColorPicker-wrap .select2-selection--single:active, .auth .auth-form-light .input-group .select2-container--default .select2-selection--single .select2-search__field:active, .select2-container--default .select2-selection--single .auth .auth-form-light .input-group .select2-search__field:active, .auth .auth-form-light .asColorPicker-wrap .select2-container--default .select2-selection--single .select2-search__field:active, .select2-container--default .select2-selection--single .auth .auth-form-light .asColorPicker-wrap .select2-search__field:active, .auth .auth-form-light .input-group .typeahead:active, .auth .auth-form-light .asColorPicker-wrap .typeahead:active,
+.auth .auth-form-light .input-group .tt-query:active,
+.auth .auth-form-light .asColorPicker-wrap .tt-query:active,
+.auth .auth-form-light .input-group .tt-hint:active,
+.auth .auth-form-light .asColorPicker-wrap .tt-hint:active {
+  border-color: #2c2e33;
+}
+.auth .auth-form-transparent {
+  background: transparent;
+}
+.auth .auth-form-transparent .form-control, .auth .auth-form-transparent .asColorPicker-input, .auth .auth-form-transparent .dataTables_wrapper select, .dataTables_wrapper .auth .auth-form-transparent select, .auth .auth-form-transparent .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-transparent input[type=text],
+.auth .auth-form-transparent .jsgrid .jsgrid-table .jsgrid-filter-row select,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-transparent select, .auth .auth-form-transparent .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-transparent input[type=number], .auth .auth-form-transparent .select2-container--default .select2-selection--single, .select2-container--default .auth .auth-form-transparent .select2-selection--single, .auth .auth-form-transparent .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .auth .auth-form-transparent .select2-search__field, .auth .auth-form-transparent .typeahead,
+.auth .auth-form-transparent .tt-query,
+.auth .auth-form-transparent .tt-hint,
+.auth .auth-form-transparent .input-group-text {
+  border-color: #e4eaec;
+}
+.auth .auth-form-transparent .form-control:focus, .auth .auth-form-transparent .asColorPicker-input:focus, .auth .auth-form-transparent .dataTables_wrapper select:focus, .dataTables_wrapper .auth .auth-form-transparent select:focus, .auth .auth-form-transparent .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-transparent input[type=text]:focus,
+.auth .auth-form-transparent .jsgrid .jsgrid-table .jsgrid-filter-row select:focus,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-transparent select:focus, .auth .auth-form-transparent .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-transparent input[type=number]:focus, .auth .auth-form-transparent .select2-container--default .select2-selection--single:focus, .select2-container--default .auth .auth-form-transparent .select2-selection--single:focus, .auth .auth-form-transparent .select2-container--default .select2-selection--single .select2-search__field:focus, .select2-container--default .select2-selection--single .auth .auth-form-transparent .select2-search__field:focus, .auth .auth-form-transparent .typeahead:focus,
+.auth .auth-form-transparent .tt-query:focus,
+.auth .auth-form-transparent .tt-hint:focus, .auth .auth-form-transparent .form-control:active, .auth .auth-form-transparent .asColorPicker-input:active, .auth .auth-form-transparent .dataTables_wrapper select:active, .dataTables_wrapper .auth .auth-form-transparent select:active, .auth .auth-form-transparent .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:active, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-transparent input[type=text]:active,
+.auth .auth-form-transparent .jsgrid .jsgrid-table .jsgrid-filter-row select:active,
+.jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-transparent select:active, .auth .auth-form-transparent .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:active, .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-transparent input[type=number]:active, .auth .auth-form-transparent .select2-container--default .select2-selection--single:active, .select2-container--default .auth .auth-form-transparent .select2-selection--single:active, .auth .auth-form-transparent .select2-container--default .select2-selection--single .select2-search__field:active, .select2-container--default .select2-selection--single .auth .auth-form-transparent .select2-search__field:active, .auth .auth-form-transparent .typeahead:active,
+.auth .auth-form-transparent .tt-query:active,
+.auth .auth-form-transparent .tt-hint:active,
+.auth .auth-form-transparent .input-group-text:focus,
+.auth .auth-form-transparent .input-group-text:active {
+  border-color: #e4eaec;
+}
+.auth .auth-form-transparent select {
+  outline-color: #e4eaec;
+}
+.auth.auth-img-bg {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .auth.auth-img-bg .auth-form-transparent {
+    width: 55%;
+    margin: auto;
+  }
+}
+.auth .brand-logo {
+  margin-bottom: 2rem;
+}
+.auth .brand-logo img {
+  width: 150px;
+}
+.auth form .auth-form-btn {
+  height: 50px;
+  line-height: 1.5;
+}
+.auth form .auth-link {
+  font-size: 0.875rem;
+}
+.auth form .auth-link:hover {
+  color: initial;
+}
+.auth button {
+  font-size: 0.875rem;
+}
+.auth button.enter-btn {
+  height: 45px;
+  margin-bottom: 28px;
+}
+.auth .forgot-pass {
+  font-size: 0.875rem;
+  text-align: right;
+}
+.auth .sign-up {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.auth .sign-up a {
+  color: #0090e7;
+}
+.auth.login-2, .auth.option-2 {
+  padding: 0;
+}
+.auth.login-2 .card, .auth.option-2 .card {
+  height: 100vh;
+}
+.auth .terms {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+.auth .terms a {
+  text-decoration: underline;
+}
+
 /* Navbar */
 .navbar {
   font-weight: normal;

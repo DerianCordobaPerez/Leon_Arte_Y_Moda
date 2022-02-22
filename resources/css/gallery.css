@@ -1,0 +1,160 @@
+.gallery__container {
+    display: block;
+    columns: 12rem;
+    gap: 1rem;
+    padding-top: 100px;
+}
+
+.gallery__container--image {
+    margin-bottom: 1rem;
+    break-inside: avoid;
+}
+
+.gallery__container--image img {
+    width: 100%;
+    display: block;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.gallery__container--image img:hover {
+    cursor: pointer;
+    filter: opacity(.8);
+}
+
+.gallery__container--image figcaption {
+    padding: 0.5rem 1rem 0.4rem;
+    background: #ddd;
+    color: #333;
+    border-radius: 1rem 1rem 0 0;
+    text-align: end;
+}
+
+
+/* IMAGE PREVIEW */
+
+
+/* container */
+
+.container-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.content-preview {
+    width: 950px;
+    height: calc(90vh - 100px);
+    display: flex;
+    justify-content: center;
+}
+
+
+/* image container  */
+
+.content-preview .image-container {
+    width: 60%;
+    position: relative;
+}
+
+.content-preview .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* buttons */
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #666;
+}
+
+button:hover {
+    color: #aaa;
+}
+
+#btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#btn-previous {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 50px;
+}
+
+#btn-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 50px;
+}
+
+
+/* preview information */
+
+.content-preview .preview-info {
+    width: 40%;
+    background-color: #fff;
+}
+
+.preview-info .title-content {
+    height: 50px;
+    display: flex;
+    /* background-color: #660d8c; */
+    background-color: #BF1B75;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.preview-info .title-content img {
+    width: 40px;
+    height: 40px;
+}
+
+.title-preview {
+    margin-left: 10px;
+}
+
+.title-content .title-preview h5 {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.title-content .title-preview span {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.preview-info .main-content {
+    margin-top: 40px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.main-content img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .1;
+}
+
+.main-content .description {}
