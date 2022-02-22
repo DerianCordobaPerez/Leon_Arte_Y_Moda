@@ -21,7 +21,7 @@
             <x-dashboard.sidebar />
        @endauth
 
-       <div class="container-fluid page-body-wrapper@guest full-page-wrapper@endguest">
+       <div class="container-fluid page-body-wrapper @guest full-page-wrapper @endguest">
            {{ $slot }}
        </div>
    </div>
