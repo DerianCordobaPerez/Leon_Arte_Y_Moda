@@ -28,28 +28,43 @@
     <div class="vh-100 mision-vision-container d-flex flex-column justify-content-center">
 
         <div class="about-title" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
-            <h1>Sobre nosotros</h1>
+            <h1 id="title">Cuales son nuestras metas</h1>
+            <h1>Conoce mas sobre nosotros</h1>
         </div>
 
         <section class="d-flex justify-content-evenly">
-            <div class="text-center size-mvv d-flex flex-column align-items-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                <img src="{{asset('images/fondo.jpg')}}" class="card-img-top" alt="...">
-                <h4 class="my-3">Mision</h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea exercitationem quaerat iusto optio iure adipisci autem.
+            <div class="text-center size-mvv d-flex flex-column align-items-center justify-content-center"
+                data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="{{ asset('images/fondo.jpg') }}" class="card-img-top" alt="...">
+                <h3 class="my-3 subtitle-mvv">Mision</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea
+                    exercitationem
+                    quaerat iusto optio iure adipisci autem.</p>
+
             </div>
 
-            <div class="text-center size-mvv d-flex flex-column align-items-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                <img src="{{asset('images/fondo.jpg')}}" class="card-img-top" alt="...">
-                <h4 class="my-3">Vision</h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea exercitationem quaerat iusto optio iure adipisci autem.
+            <div class="text-center size-mvv d-flex flex-column align-items-center justify-content-center"
+                data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="{{ asset('images/fondo.jpg') }}" class="card-img-top" alt="...">
+                <h3 class="my-3 subtitle-mvv">Vision</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea
+                    exercitationem
+                    quaerat iusto optio iure adipisci autem.</p>
             </div>
 
-            <div class="text-center size-mvv d-flex flex-column align-items-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                <img src="{{asset('images/fondo.jpg')}}" class="card-img-top" alt="...">
-                <h4 class="my-3">Valores</h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea exercitationem quaerat iusto optio iure adipisci autem.
+            <div class="text-center size-mvv d-flex flex-column align-items-center justify-content-center"
+                data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="{{ asset('images/fondo.jpg') }}" class="card-img-top" alt="...">
+                <h3 class="my-3 subtitle-mvv">Valores</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea
+                    exercitationem
+                    quaerat iusto optio iure adipisci autem.</p>
             </div>
+
+
         </section>
+
+
     </div>
 
     <x-slot:js>
@@ -57,5 +72,5 @@
         <script>
             AOS.init();
         </script>
-    </x-slot>
+        </x-slot>
 </x-common.layout>
