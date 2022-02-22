@@ -156,50 +156,99 @@ nav.navbar {
     }
 }
 
+/* GALLERY TITLE */
+
+.title-gallery {
+    padding-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* GALLERY CONTAINER */
+
 .gallery__container {
     display: block;
     -moz-columns: 12rem;
          columns: 12rem;
     gap: 1rem;
-    padding-top: 100px;
 }
+
+
+/* GALLERY ITEMS */
 
 .gallery__container--image {
     margin-bottom: 1rem;
     -moz-column-break-inside: avoid;
          break-inside: avoid;
+    position: relative;
 }
 
 .gallery__container--image img {
     width: 100%;
     display: block;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 1rem;
 }
 
 .gallery__container--image img:hover {
-    cursor: pointer;
+    cursor: zoom-in;
     filter: opacity(.8);
 }
 
 .gallery__container--image figcaption {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     padding: 0.5rem 1rem 0.4rem;
-    background: #ddd;
-    color: #333;
-    border-radius: 1rem 1rem 0 0;
-    text-align: end;
+    background: #0007;
+    color: #fff;
+    border-radius: 0 0 1rem 1rem;
+    z-index: 100;
+}
+
+.gallery__container--image .image__icons--hover {
+    position: absolute;
+    top: 10px;
+    right: 6px;
+}
+
+.image__icons--hover i {
+    color: #000;
+    background-color: #fffc;
+    padding: 4px 6px;
+    border-radius: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    visibility: hidden;
+}
+
+.image__icons--hover i:hover {
+    background-color: #fff;
+}
+
+.gallery__container--image:hover i {
+    visibility: visible;
 }
 
 
-/* IMAGE PREVIEW */
+/* ===================== */
 
 
-/* container */
+/* GALLERY PREVIEW */
+
+
+/* ===================== */
+
+
+/* CONTAINER PREVIEW */
 
 .container-preview {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 3000;
     width: 100%;
     height: 100%;
     display: none;
@@ -210,7 +259,8 @@ nav.navbar {
 
 .content-preview {
     width: 950px;
-    height: calc(90vh - 100px);
+    /* height: calc(90vh - 100px); */
+    height: 90vh;
     display: flex;
     justify-content: center;
 }
@@ -237,19 +287,24 @@ button {
     cursor: pointer;
     background-color: transparent;
     border: none;
-    color: #666;
+    color: #fff;
 }
 
 button:hover {
-    color: #aaa;
+    color: #ccc;
 }
 
 #btn-close {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 25px;
-    padding: 5px;
+    font-size: 30px;
+    padding: 10px;
+    color: #999;
+}
+
+#btn-close:hover {
+    color: #fff;
 }
 
 #btn-previous {
@@ -272,6 +327,7 @@ button:hover {
 .content-preview .preview-info {
     width: 40%;
     background-color: #fff;
+    /* position: relative; */
 }
 
 .preview-info .title-content {
