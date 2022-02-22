@@ -1,23 +1,26 @@
 <x-common.layout title="León Arte y Moda">
+
     {{-- Main header --}}
-    <div class="header">
-        <div class="row mx-5 mt-5 pt-5">
-            <div class="col-4 text-title">
-                <h1>León Arte y Moda</h1>
-            </div>
+    <div class="carousel-1" id="carousel-header">
+        <div class="header">
+            <div class="row mx-5 mt-5 pt-5">
+                <div class="col-4 text-title">
+                    <h1>León Arte y Moda</h1>
+                </div>
 
-            <div class="col-8 text-white text-center">
-                <h2 class="fs-1 fw-bold">¿Quiénes Somos?</h2>
-                <p class="fs-5 px-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident blanditiis placeat ratione
-                    architecto laudantium perspiciatis aut officiis velit veritatis animi nobis molestias, quaerat
-                    dignissimos. Obcaecati sit dolorum inventore. Eaque iusto impedit
-                    dolorum facere incidunt atque aliquid magni culpa obcaecati non.
-                </p>
+                <div class="col-8 text-white text-center">
+                    <h2 class="fs-1 fw-bold">¿Quiénes Somos?</h2>
+                    <p class="fs-5 px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident blanditiis placeat ratione
+                        architecto laudantium perspiciatis aut officiis velit veritatis animi nobis molestias, quaerat
+                        dignissimos. Obcaecati sit dolorum inventore. Eaque iusto impedit
+                        dolorum facere incidunt atque aliquid magni culpa obcaecati non.
+                    </p>
 
-                <div class="buttons">
-                    <button class="btn-welcome">Explore</button>
-                    <button class="btn-welcome">Video</button>
+                    <div class="buttons">
+                        <button class="btn-welcome">Explore</button>
+                        <button class="btn-welcome">Video</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,5 +75,22 @@
         <script>
             AOS.init();
         </script>
+
+        <script>
+            setInterval('CarouselHeader()', 5000);
+
+            function CarouselHeader() {
+                var elemento = document.getElementById("carousel-header");
+
+                if (elemento.className == "carousel-1") {
+                    elemento.className = "carousel-2";
+                } else if (elemento.className == "carousel-2") {
+                    elemento.className = "carousel-3";
+                } else {
+                    elemento.className = "carousel-1";
+                }
+            }
+        </script>
+
         </x-slot>
 </x-common.layout>
