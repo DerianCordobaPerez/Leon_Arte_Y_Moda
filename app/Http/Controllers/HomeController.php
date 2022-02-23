@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use App\Services\ViewService;
 use Exception;
 use Illuminate\Contracts\View\Factory;
@@ -26,6 +27,11 @@ class HomeController extends Controller
 
     public function gallery(): View|Factory
     {
-        return $this->render('gallery');
+        $posts = Post::all();
+
+        return $this->render(
+            'gallery',
+            ['posts' => $posts]
+        );
     }
 }
