@@ -1,0 +1,439 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css);
+@import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css);
+@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
+@import url(https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap);
+.navbar-scroll {
+    transition: all 0.7s ease-in-out;
+    background-color: #670b6a;
+    -webkit-animation-direction: alternate, reverse, normal;
+            animation-direction: alternate, reverse, normal;
+    height: 60px !important;
+}
+
+.navbar-scroll img {
+    width: 50px;
+}
+
+.logo-navbar {
+    width: 80px;
+    filter: invert(1);
+    transition: all 0.5s;
+}
+
+a.nav-link {
+    color: #fff;
+    position: relative;
+    margin-left: 20px;
+}
+
+a.nav-link:hover {
+    color: #fff;
+}
+
+a.nav-link:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 32px;
+    transition: all .5s ease;
+}
+
+a.nav-link:hover:after {
+    width: 100%;
+}
+
+a.nav-link:focus {
+    color: #fff;
+}
+
+.social-networks ul li,
+a {
+    color: #fff;
+    font-size: 20px;
+}
+
+nav.navbar {
+    height: 100px;
+    /* position: relative; */
+}
+.footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-1 {
+    background: linear-gradient(#0008, #0008), url("https://www.10wallpaper.com/wallpaper/1680x1050/1407/beauty_fashion_woman-Photo_background_wallpaper_1680x1050.jpg") no-repeat fixed;
+    background-size: cover;
+    border-radius: 0 0 0 250px;
+}
+
+.carousel-2 {
+    background: linear-gradient(#0008, #0008), url("https://media-we-cdn.oriflame.com/-/media/WE/Images/2022/CE/C3/beauty-edits-cms/b1-how-to-use-hybrid-make-up-to-achieve-a-radiant-look.ashx?u=0101010000&q=90") no-repeat fixed;
+    background-size: cover;
+    border-radius: 0 0 0 250px;
+}
+
+.carousel-3 {
+    background: linear-gradient(#0008, #0008), url("https://academiaestrellas.com/wp-content/uploads/2016/04/bellezatodoslosdias.jpg") no-repeat fixed;
+    background-size: cover;
+    border-radius: 0 0 0 250px;
+}
+
+.text-title h1 {
+    font-size: 90px;
+    color: #fff;
+}
+
+.btn-purple-card {
+    background: #670b6a;
+    color: #fff;
+    width: 100px;
+}
+
+
+/* About title */
+
+.mision-vision-container .about-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.mision-vision-container .about-title h1#title {
+    font-size: 55px;
+    color: #670b6a;
+    font-style: italic;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.mision-vision-container .about-title h1 {
+    font-size: 35px;
+    color: #949294;
+}
+
+.subtitle-mvv {
+    font-weight: bold;
+    color: #670b6a;
+    font-family: serif;
+    font-style: italic;
+}
+
+.size-mvv {
+    width: 25%;
+    height: 400px;
+    padding: 10px;
+    box-shadow: 0px 25px 30px 1px rgba(0, 0, 0, 0.28);
+}
+
+.size-mvv p {
+    color: #949294;
+    font-size: 20px;
+}
+
+.size-mvv img {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+
+/* Header buttons */
+
+.btn-welcome {
+    width: 200px;
+    padding: 10px 0;
+    margin: 0 10px;
+    background-color: #670b6a;
+    border: 4px solid #670b6a;
+    color: #fff;
+    font-weight: bold;
+    transition: .3s ease all;
+}
+
+.btn-welcome:nth-child(2) {
+    background: transparent;
+}
+
+.btn-welcome:hover:nth-child(2) {
+    background-color: #670b6a94;
+    box-shadow: none;
+}
+
+
+/*  Buttons animations */
+
+.btn-welcome:hover:nth-child(1) {
+    cursor: pointer;
+    -webkit-animation: animated .5s ease-in 1;
+            animation: animated .5s ease-in 1;
+}
+
+@-webkit-keyframes animated {
+    from {
+        box-shadow: 0 0 0 0 #620b8acc;
+    }
+    to {
+        box-shadow: 0 0 0 40px #620b8a1e;
+    }
+}
+
+@keyframes animated {
+    from {
+        box-shadow: 0 0 0 0 #620b8acc;
+    }
+    to {
+        box-shadow: 0 0 0 40px #620b8a1e;
+    }
+}
+/* GALLERY TITLE */
+
+.title-gallery {
+    padding-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* GALLERY CONTAINER */
+
+.gallery__container {
+    display: block;
+    -moz-columns: 12rem;
+         columns: 12rem;
+    gap: 1rem;
+}
+
+
+/* GALLERY ITEMS */
+
+.gallery__container--image {
+    margin-bottom: 1rem;
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
+    position: relative;
+}
+
+.gallery__container--image img {
+    width: 100%;
+    display: block;
+    border-radius: 1rem;
+}
+
+.gallery__container--image img:hover {
+    cursor: zoom-in;
+    filter: opacity(.8);
+}
+
+.gallery__container--image figcaption {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0.5rem 1rem 0.4rem;
+    background: #0007;
+    color: #fff;
+    border-radius: 0 0 1rem 1rem;
+    z-index: 100;
+}
+
+.gallery__container--image .image__icons--hover {
+    position: absolute;
+    top: 10px;
+    right: 6px;
+}
+
+.image__icons--hover i {
+    color: #000;
+    background-color: #fffc;
+    padding: 4px 6px;
+    border-radius: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    visibility: hidden;
+}
+
+.image__icons--hover i:hover {
+    background-color: #fff;
+}
+
+.gallery__container--image:hover i {
+    visibility: visible;
+}
+
+
+/* ===================== */
+
+
+/* GALLERY PREVIEW */
+
+
+/* ===================== */
+
+
+/* CONTAINER PREVIEW */
+
+.container-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.content-preview {
+    width: 950px;
+    /* height: calc(90vh - 100px); */
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* image container  */
+
+.content-preview .image-container {
+    width: 60%;
+    position: relative;
+}
+
+.content-preview .image-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+
+/* buttons */
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+button:hover {
+    color: #ccc;
+}
+
+#btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    padding: 10px;
+    color: #999;
+}
+
+#btn-close:hover {
+    color: #fff;
+}
+
+#btn-previous {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 50px;
+}
+
+#btn-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 50px;
+}
+
+
+/* preview information */
+
+.content-preview .preview-info {
+    width: 40%;
+    background-color: #fff;
+    /* position: relative; */
+}
+
+.preview-info .title-content {
+    height: 50px;
+    display: flex;
+    /* background-color: #660d8c; */
+    background-color: #BF1B75;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.preview-info .title-content img {
+    width: 40px;
+    height: 40px;
+}
+
+.title-preview {
+    margin-left: 10px;
+}
+
+.title-content .title-preview h5 {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.title-content .title-preview span {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.preview-info .main-content {
+    margin-top: 40px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.main-content img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .1;
+}
+
+.main-content .description {}
+/* Bootstrap */
+
+/* Components */
+
+/* Icons */
+
+/* AOS */
+
+/* Font */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
