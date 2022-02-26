@@ -34,4 +34,9 @@ class Post extends Model
     {
         return $this->belongsToMany(Picture::class);
     }
+
+    public function getPictureAttribute(): string
+    {
+        return $this->pictures->first()->path . '/' . $this->pictures->first()->title;
+    }
 }
