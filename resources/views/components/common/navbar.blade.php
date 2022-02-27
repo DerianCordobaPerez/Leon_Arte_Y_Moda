@@ -27,7 +27,7 @@
                     <a class="nav-link px-0" href="{{route('gallery')}}">Galeria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-0" href="#">Contáctanos</a>
+                    <a class="nav-link px-0" href="{{route('contact')}}">Contáctanos</a>
                 </li>
             </ul>
         </div>

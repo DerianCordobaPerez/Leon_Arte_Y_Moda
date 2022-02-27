@@ -9,6 +9,7 @@ Route::controller(HomeController::class)->group(function() {
     Route::get('/', 'index')->name('index');
     Route::get('/about', 'about')->name('about');
     Route::get('/gallery', 'gallery')->name('gallery');
+    Route::get('/contact', 'contact')->name('contact');
 });
 
 Route::prefix('dashboard')->group(function() {

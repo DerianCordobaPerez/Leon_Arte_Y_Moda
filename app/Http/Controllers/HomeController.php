@@ -34,4 +34,9 @@ class HomeController extends Controller
             ['posts' => $posts]
         );
     }
+
+    public function contact(): View|Factory
+    {
+        return $this->render('contact');
+    }
 }

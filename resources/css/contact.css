@@ -1,0 +1,102 @@
+/* HEADER CONTACT US */
+
+.header__contact {
+    width: 100%;
+    height: 80vh;
+    background-image: url('https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/271554328_154246760276422_7525582486259297642_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=e3f864&_nc_ohc=ioyTERGOKiMAX_OEgjh&_nc_ht=scontent-mia3-2.xx&oh=00_AT-eh7k91eO0epP8skIynQ2s7p-EtbDQ-EcReEUK2K9ByA&oe=62204AD2');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__contact-us {
+    color: #8C339F;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bold;
+    background: #fff;
+}
+
+
+/* MAIN CONTACT US */
+
+.main__contact {
+    /* position: relative; */
+}
+
+
+/* CONTAINER CARDS CONTACT US */
+
+.cards__contact {
+    position: relative;
+    top: -90px;
+    /* display: flex;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 20px;
+    place-content: center;
+}
+
+
+/* CARDS CONTACT US */
+
+.contact__items {
+    width: 100%;
+    height: 180px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8C339F;
+    position: relative;
+}
+
+.contact__items::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #8C339F61;
+    position: absolute;
+    bottom: 0;
+}
+
+.contact__items::after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: #8C339F;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+.contact__items:hover::after {
+    width: 100%;
+}
+
+.contact__items i {
+    font-size: 40px;
+}
+
+.contact__items>h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.contact__items .contact__email,
+span {
+    color: #8C339F91;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contact__email:hover {
+    color: #8C339F;
+}
