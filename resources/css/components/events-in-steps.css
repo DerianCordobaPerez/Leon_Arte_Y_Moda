@@ -1,0 +1,131 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Contenedor principal */
+
+.events-step {
+    width: 92%;
+    margin: 20px auto;
+}
+
+
+/* Título del formulario */
+
+.events-step__title {
+    font-size: 55px;
+    color: #670b6a;
+    font-style: italic;
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* body del formulario */
+
+.events-step__body {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/* step */
+
+.step {
+    min-width: 100%;
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.to-left {
+    margin-left: -100%;
+}
+
+.step.inactive {
+    animation-name: scale;
+    animation-duration: .2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+/* header de step */
+
+
+/* .step__header {} */
+
+.step__title {
+    text-align: center;
+    font-size: 30px;
+    color: #949294;
+}
+
+
+/* body de step */
+
+.step__body {
+    height: 400px;
+}
+
+
+/* step footer */
+
+.step__footer {
+    background: #008080;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+
+/* step botones */
+
+.step__button {
+    display: inline-block;
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/*  */
+
+
+/* .step__body img {
+    height: 100%;
+    max-width: 40%;
+    background-size: cover;
+    border-radius: 50px;
+} */
+
+.img-events {
+    min-height: 100%;
+    max-width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+
+/*  */
