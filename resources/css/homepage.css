@@ -35,6 +35,9 @@
 }
 
 
+/*  */
+
+
 /* About title */
 
 .mision-vision-container .about-title {
@@ -42,7 +45,7 @@
     text-align: center;
 }
 
-.mision-vision-container .about-title h1#title {
+.titles-home {
     font-size: 55px;
     color: #670b6a;
     font-style: italic;
@@ -50,8 +53,8 @@
     font-weight: bold;
 }
 
-.mision-vision-container .about-title h1 {
-    font-size: 35px;
+.mision-vision-container .about-title h1#subtitle {
+    font-size: 30px;
     color: #949294;
 }
 
@@ -66,7 +69,6 @@
     width: 25%;
     height: 400px;
     padding: 10px;
-    box-shadow: 0px 25px 30px 1px rgba(0, 0, 0, 0.28);
 }
 
 .size-mvv p {
@@ -80,6 +82,9 @@
     height: 70px;
     object-fit: cover;
 }
+
+
+/*  */
 
 
 /* Header buttons */
@@ -104,13 +109,60 @@
     box-shadow: none;
 }
 
-
-/*  Buttons animations */
-
 .btn-welcome:hover:nth-child(1) {
     cursor: pointer;
     animation: animated .5s ease-in 1;
 }
+
+
+/*ABOUT US*/
+
+.about {
+    background-color: #fff;
+    margin-top: 80px;
+}
+
+.information-container {
+    margin: 70px;
+    padding: 10px;
+}
+
+div.information {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    border-radius: 80px 0px 80px 0px;
+}
+
+div.information h2 {
+    font-weight: bold;
+    color: #670b6a;
+    font-family: serif;
+    font-style: italic;
+}
+
+div.information img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+    filter: drop-shadow(0px 0px 5px #670b6a);
+}
+
+div.information>.title-profile,
+.text-profile,
+.link-profile {
+    margin-left: 100px;
+}
+
+
+/*  Buttons animations */
 
 @keyframes animated {
     from {
