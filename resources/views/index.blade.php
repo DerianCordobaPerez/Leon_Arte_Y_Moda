@@ -82,7 +82,7 @@
                     <div class="step__header">
 
                     </div>
-                    <div class=" row">
+                    <div class="step__body row">
                         {{--  --}}
                         <div id="carouselExampleCaptions" class="carousel slide img-events col" data-bs-ride="carousel">
 
@@ -125,18 +125,18 @@
                     </div>
                     <div class="step__body row">
                         {{--  --}}
-                        <div id="carouselExampleCaptions2" class="carousel slide img-events col" data-bs-ride="carousel">
+                        <div id="carouselExampleCaptions2" class="carousel slide img-events col " data-bs-ride="carousel">
 
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
+                                <div class="carousel-item active img-events">
                                     <img src="https://aws.glamour.es/prod/designs/v1/assets/1800x1200/623412.jpg"
                                         class="d-block w-100" alt="...">
                                 </div>
-                                <div class="carousel-item">
+                                <div class="carousel-item img-events">
                                     <img src="https://ladefinicion.com/wp-content/uploads/2021/08/diseno-de-moda.jpg"
                                         class="d-block w-100" alt="...">
                                 </div>
-                                <div class="carousel-item">
+                                <div class="carousel-item img-events">
                                     <img src="https://media.vogue.es/photos/5cc751ab8f6f675e1f5beb72/master/w_2400,h_1800,c_limit/moda_tendencias_voguees_965319015.jpg"
                                         class="d-block w-100" alt="...">
                                 </div>
@@ -167,16 +167,16 @@
                     </div>
                     <div class="step__body row">
                         {{--  --}}
-                        <div id="carouselExampleCaptions3" class="carousel slide img-events col" data-bs-ride="carousel">
+                        <div id="carouselExampleCaptions3" class="carousel slide img-events col h-100" data-bs-ride="carousel">
 
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
                                     <img src="https://aws.glamour.es/prod/designs/v1/assets/1800x1200/623412.jpg"
-                                        class="d-block w-100" alt="...">
+                                        class="d-block w-100 h-100" alt="..." heigth="200">
                                 </div>
-                                <div class="carousel-item">
+                                <div class="carousel-item h-100">
                                     <img src="https://ladefinicion.com/wp-content/uploads/2021/08/diseno-de-moda.jpg"
-                                        class="d-block w-100" alt="...">
+                                        class="d-block w-100 h-100" alt="..." heigth="200">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="https://media.vogue.es/photos/5cc751ab8f6f675e1f5beb72/master/w_2400,h_1800,c_limit/moda_tendencias_voguees_965319015.jpg"
