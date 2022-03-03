@@ -33,7 +33,7 @@
                 <!-- BTN-CLOSE  -->
                 <button id="btn-close" type="button"><i class="bi bi-x-lg"></i></button>
                 <div class="title-content">
-                    <img src="{{asset('images/logoLAM.png')}}" alt="LOGO"/>
+                    <img src="{{asset('images/Logo.png')}}" alt="LOGO"/>
                     <div class="title-preview">
                         <h5>Leon Arte y Moda</h5>
                         <span>01 de enero 2022 <i class="bi bi-globe2"></i></span>
@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="main-content">
-                    <img src="{{asset('images/logoLAM.png')}}" alt="LOGO"/>
+                    <img src="{{asset('images/Logo.png')}}" alt="LOGO"/>
                     <div class="description">
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
