@@ -32,7 +32,7 @@
 
         <div class="about-title" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
             <h1 class="titles-home">¿Cuales son nuestras metas?</h1>
-            <h1 id="subtitle">Conoce más sobre nosotros</h1>
+            <h1 class="subtitles-home">Conoce más sobre nosotros</h1>
         </div>
 
         <section class="d-flex justify-content-evenly">
@@ -74,19 +74,17 @@
 
     <div class="events">
         <div class="events-step">
-            <div class="events-step__header">
+            <div class="events-step__header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <h1 class="events-step__title">Eventos proximos</h1>
             </div>
             <div class="events-step__body">
                 <div class="step active" id="step-1">
-                    <div class="step__header">
-
-                    </div>
                     <div class="step__body row">
                         {{--  --}}
-                        <div id="carouselExampleCaptions" class="carousel slide img-events col" data-bs-ride="carousel">
+                        <div id="carouselExampleCaptions" class="carousel slide img-events col carousel-container"
+                            data-bs-ride="carousel" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
 
-                            <div class="carousel-inner">
+                            <div class="carousel-inner ">
                                 <div class="carousel-item active">
                                     <img src="https://aws.glamour.es/prod/designs/v1/assets/1800x1200/623412.jpg"
                                         class="d-block w-100" alt="...">
@@ -112,10 +110,41 @@
                             </button>
                         </div>
                         {{--  --}}
-                        <div class="col">
-                            <h2 class="step__title">Pasarela moderna</h2>
-                            <button type="button" class="step__button step__button--next" data-to_step="2"
-                                data-step="1">Siguiente</button>
+                        <div class="col p-3" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                            <h3 class="step__subtitle">Pasarela moderna</h3>
+                            <div class="information-events">
+
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut vitae voluptas ex
+                                    porro
+                                    deleniti excepturi, debitis repellendus aliquam, nostrum nulla praesentium! At dolor
+                                    expedita adipisci perspiciatis recusandae. Assumenda vel quibusdam, exercitationem
+                                    illo
+                                    libero modi asperiores adipisci vero accusantium aut saepe.
+                                </p>
+
+                                <label class="mx-2">Fecha:</label><input type="date" value="2022-07-22"
+                                    min="2022-07-22" max="2022-07-22">
+
+                                <label class="mx-2">Hora:</label><input type="time" value="23:20" min="23:20"
+                                    max="23:20">
+
+                            </div>
+                            <div class="countdown-container shadow">
+                                <h4 class="mb-4">El evento comienza en: </h4>
+                                <ul>
+                                    <li><span id="days"></span> Dias </li>
+                                    <li><span id="hours"></span> Horas </li>
+                                    <li><span id="minutes"></span> Minutos </li>
+                                    <li><span id="seconds"></span> Segundos </li>
+                                </ul>
+
+                            </div>
+                            <div class=" mx-2 row">
+                                <button type="button" class="step__button step__button--next col" data-to_step="2"
+                                    data-step="1">Siguiente evento</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -125,7 +154,8 @@
                     </div>
                     <div class="step__body row">
                         {{--  --}}
-                        <div id="carouselExampleCaptions2" class="carousel slide img-events col " data-bs-ride="carousel">
+                        <div id="carouselExampleCaptions2" class="carousel slide img-events col carousel-container "
+                            data-bs-ride="carousel">
 
                             <div class="carousel-inner">
                                 <div class="carousel-item active img-events">
@@ -153,12 +183,42 @@
                             </button>
                         </div>
                         {{--  --}}
-                        <div class="col">
-                            <h2 class="step__title">Evento 2</small></h2>
-                            <button type="button" id="step-button-back-1" class="step__button step__button--back"
-                                data-to_step="1" data-step="2">Regresar</button>
-                            <button type="button" class="step__button step__button--next" data-to_step="3"
-                                data-step="2">Siguiente</button>
+                        <div class="col p-3">
+                            <h3 class="step__subtitle">Fiesta Nocturna</h3>
+                            <div class="information-events">
+
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut vitae voluptas ex
+                                    porro
+                                    deleniti excepturi, debitis repellendus aliquam, nostrum nulla praesentium! At dolor
+                                    expedita adipisci perspiciatis recusandae. Assumenda vel quibusdam, exercitationem
+                                    illo
+                                    libero modi asperiores adipisci vero accusantium aut saepe.
+                                </p>
+
+                                <label class="mx-2">Fecha:</label><input type="date" value="2022-07-22"
+                                    min="2022-07-22" max="2022-07-22">
+
+                                <label class="mx-2">Hora:</label><input type="time" value="23:20" min="23:20"
+                                    max="23:20">
+
+                            </div>
+                            <div class="countdown-container shadow">
+                                <h4 class="mb-4">El evento comienza en: </h4>
+                                <ul>
+                                    <li><span id="days"></span> Dias </li>
+                                    <li><span id="hours"></span> Horas </li>
+                                    <li><span id="minutes"></span> Minutos </li>
+                                    <li><span id="seconds"></span> Segundos </li>
+                                </ul>
+
+                            </div>
+                            <div class="row mx-2">
+                                <button type="button" id="step-button-back-1" class="step__button step__button--back col"
+                                    data-to_step="1" data-step="2">Regresar</button>
+                                <button type="button" class="step__button step__button--next col"
+                                    data-to_step="3" data-step="2">Siguiente</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -167,7 +227,8 @@
                     </div>
                     <div class="step__body row">
                         {{--  --}}
-                        <div id="carouselExampleCaptions3" class="carousel slide img-events col h-100" data-bs-ride="carousel">
+                        <div id="carouselExampleCaptions3" class="carousel slide img-events col carousel-container"
+                            data-bs-ride="carousel">
 
                             <div class="carousel-inner h-100">
                                 <div class="carousel-item active h-100">
@@ -195,11 +256,40 @@
                             </button>
                         </div>
                         {{--  --}}
-                        <div class="col">
-                            <h2 class="step__title">Evento 3</small></h2>
+                        <div class="col p-3">
+                            <h3 class="step__subtitle">Moda Playera</h3>
+                            <div class="information-events">
 
-                            <button type="button" class="step__button step__button--back" data-to_step="2"
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut vitae voluptas ex
+                                    porro
+                                    deleniti excepturi, debitis repellendus aliquam, nostrum nulla praesentium! At dolor
+                                    expedita adipisci perspiciatis recusandae. Assumenda vel quibusdam, exercitationem
+                                    illo
+                                    libero modi asperiores adipisci vero accusantium aut saepe.
+                                </p>
+
+                                <label class="mx-2">Fecha:</label><input type="date" value="2022-07-22"
+                                    min="2022-07-22" max="2022-07-22">
+
+                                <label class="mx-2">Hora:</label><input type="time" value="23:20" min="23:20"
+                                    max="23:20">
+
+                            </div>
+                            <div class="countdown-container shadow">
+                                <h4 class="mb-4">El evento comienza en: </h4>
+                                <ul>
+                                    <li><span id="days"></span> Dias </li>
+                                    <li><span id="hours"></span> Horas </li>
+                                    <li><span id="minutes"></span> Minutos </li>
+                                    <li><span id="seconds"></span> Segundos </li>
+                                </ul>
+
+                            </div>
+                            <div class="row mx-2">
+                            <button type="button" class="step__button step__button--back col" data-to_step="2"
                                 data-step="3">Regresar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -211,14 +301,15 @@
     <div class="about">
 
         <div class="text-center" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
-            <h1 class="titles-home">¿Cuales son nuestras metas?</h1>
+            <h1 class="titles-home">Modelo TOP-1</h1>
+            <h1 class="subtitles-home">(Información Personal)</h1>
         </div>
 
-        <div class="row mx-5 information-container">
+        <div class="row mx-5 information-container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <div class="col-8 information shadow">
                 <img src="https://images.ctfassets.net/lh3zuq09vnm2/yBDals8aU8RWtb0xLnPkI/19b391bda8f43e16e64d40b55561e5cd/How_tracking_user_behavior_on_your_website_can_improve_customer_experience.png"
                     alt="Imagen de Misión">
-                <h2 class="mb-3 title-profile">Misión</h2>
+                <h2 class="mb-3 title-profile">Juan Pablo Martinez Herrera</h2>
                 <p class="fs-5 text-profile">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, maiores
                     ex? Neque et magni provident quae distinctio, quisquam perferendis, voluptates accusamus doloremque
                     necessitatibus cum voluptatibus facere tempora aut repellat
