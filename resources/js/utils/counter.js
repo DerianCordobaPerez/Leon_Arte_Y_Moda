@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
         const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
         const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
-        // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
 
         // Render
         SPAN_DAYS.textContent = REMAINING_DAYS;

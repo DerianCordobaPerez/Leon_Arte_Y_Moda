@@ -56,4 +56,3 @@ const previousImage = () => {
 }
 
 btnPrevious.addEventListener('click', previousImage);
-s

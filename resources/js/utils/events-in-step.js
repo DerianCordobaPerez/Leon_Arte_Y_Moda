@@ -1,6 +1,6 @@
-const div = document.querySelector('.events-step')
+const eventsStep = document.querySelector('.events-step')
 
-div.addEventListener('click', ({ target }) => {
+eventsStep.addEventListener('click', ({ target }) => {
     const isButtonNext = target.classList.contains('step__button--next')
     const isButtonBack = target.classList.contains('step__button--back')
 
