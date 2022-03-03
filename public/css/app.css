@@ -92,6 +92,7 @@ nav.navbar {
     font-family: serif;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 
@@ -107,7 +108,6 @@ nav.navbar {
 
 .step {
     min-width: 100%;
-    height: 500px;
     opacity: 0;
     transition: all .2s linear;
 }
@@ -149,27 +149,20 @@ nav.navbar {
     }
 }
 
-
-/* header de step */
-
-
-/* .step__header {} */
-
 .step__title {
     text-align: center;
-    font-size: 30px;
-    color: #949294;
+    color: #670b6a;
+    font-family: serif;
+    font-style: italic;
 }
 
-
-/* body de step */
-
-.step__body {
-    height: 600px;
+.step__subtitle {
+    text-align: center;
+    font-weight: bold;
+    color: #670b6a;
+    font-family: serif;
+    font-style: italic;
 }
-
-
-/* step footer */
 
 .step__footer {
     background: #008080;
@@ -181,19 +174,71 @@ nav.navbar {
 /* step botones */
 
 .step__button {
-    display: inline-block;
-    padding: 10px;
-    background-color: blue;
-    border: none;
-    color: white;
-    border-radius: 3px;
-    cursor: pointer;
+    width: 200px;
+    padding: 10px 0;
+    margin: 0 10px;
+    background: transparent;
+    border: 4px solid #670b6a;
+    color: #670b6a;
+    font-weight: bold;
+    transition: .3s ease all;
 }
 
 .img-events img {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+}
+
+.carousel-container .carousel-item {
+    height: 500px;
+}
+
+
+/* counter  */
+
+.countdown-container {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background: #670b6ab9;
+}
+
+.countdown-container h4 {
+    color: #fff;
+    font-style: italic;
+}
+
+.countdown-container ul li {
+    color: #fff;
+    list-style: none;
+    display: inline;
+    border: solid 1px #fff;
+    margin: 7px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.countdown-container ul li span {
+    color: #fff;
+}
+
+
+/*  */
+
+
+/* informaction events */
+
+.information-events {
+    padding: 10px;
+    margin: 5px;
+    text-align: justify;
+}
+
+.information-events p {
+    color: #949294;
+    font-size: 20px;
 }
 
 
@@ -253,7 +298,7 @@ nav.navbar {
     font-weight: bold;
 }
 
-.mision-vision-container .about-title h1#subtitle {
+.subtitles-home {
     font-size: 30px;
     color: #949294;
 }

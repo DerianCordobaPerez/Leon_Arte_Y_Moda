@@ -2068,8 +2068,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_scroll_nav__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_utils_scroll_nav__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _utils_events_in_step__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/events-in-step */ "./resources/js/utils/events-in-step.js");
 /* harmony import */ var _utils_events_in_step__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_utils_events_in_step__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _utils_gallery_preview__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/gallery-preview */ "./resources/js/utils/gallery-preview.js");
-/* harmony import */ var _utils_gallery_preview__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_utils_gallery_preview__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils_counter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/counter */ "./resources/js/utils/counter.js");
+/* harmony import */ var _utils_counter__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_utils_counter__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils_gallery_preview__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils/gallery-preview */ "./resources/js/utils/gallery-preview.js");
+/* harmony import */ var _utils_gallery_preview__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_utils_gallery_preview__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -2110,6 +2113,60 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/utils/counter.js":
+/*!***************************************!*\
+  !*** ./resources/js/utils/counter.js ***!
+  \***************************************/
+/***/ (() => {
+
+document.addEventListener('DOMContentLoaded', function () {
+  //===
+  // VARIABLES
+  //===
+  var DATE_TARGET = new Date('04/13/2022 0:01 AM'); // DOM for render
+
+  var SPAN_DAYS = document.querySelector('span#days');
+  var SPAN_HOURS = document.querySelector('span#hours');
+  var SPAN_MINUTES = document.querySelector('span#minutes');
+  var SPAN_SECONDS = document.querySelector('span#seconds'); // Milliseconds for the calculations
+
+  var MILLISECONDS_OF_A_SECOND = 1000;
+  var MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+  var MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+  var MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24; //===
+  // FUNCTIONS
+  //===
+
+  /**
+   * Method that updates the countdown and the sample
+   */
+
+  function updateCountdown() {
+    // Calcs
+    var NOW = new Date();
+    var DURATION = DATE_TARGET - NOW;
+    var REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+    var REMAINING_HOURS = Math.floor(DURATION % MILLISECONDS_OF_A_DAY / MILLISECONDS_OF_A_HOUR);
+    var REMAINING_MINUTES = Math.floor(DURATION % MILLISECONDS_OF_A_HOUR / MILLISECONDS_OF_A_MINUTE);
+    var REMAINING_SECONDS = Math.floor(DURATION % MILLISECONDS_OF_A_MINUTE / MILLISECONDS_OF_A_SECOND); // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+    // Render
+
+    SPAN_DAYS.textContent = REMAINING_DAYS;
+    SPAN_HOURS.textContent = REMAINING_HOURS;
+    SPAN_MINUTES.textContent = REMAINING_MINUTES;
+    SPAN_SECONDS.textContent = REMAINING_SECONDS;
+  } //===
+  // INIT
+  //===
+
+
+  updateCountdown(); // Refresh every second
+
+  setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+});
 
 /***/ }),
 
