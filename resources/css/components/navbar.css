@@ -6,11 +6,11 @@
 }
 
 .navbar-scroll img {
-    width: 50px;
+    width: 7rem;
 }
 
 .logo-navbar {
-    width: 80px;
+    width: 10rem;
     filter: invert(1);
     transition: all 0.5s;
 }
