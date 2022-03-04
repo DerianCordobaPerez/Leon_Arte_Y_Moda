@@ -11,11 +11,11 @@
 }
 
 .navbar-scroll img {
-    width: 50px;
+    width: 7rem;
 }
 
 .logo-navbar {
-    width: 80px;
+    width: 10rem;
     filter: invert(1);
     transition: all 0.5s;
 }
@@ -60,6 +60,7 @@ nav.navbar {
     height: 100px;
     /* position: relative; */
 }
+
 .footer {
     width: 100%;
     bottom: 0;
@@ -243,30 +244,41 @@ nav.navbar {
 
 
 /*  */
-.header {
+.carousel-caption-header {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
+    position: absolute;
 }
 
-.carousel-1 {
-    background: linear-gradient(#0008, #0008), url("https://www.10wallpaper.com/wallpaper/1680x1050/1407/beauty_fashion_woman-Photo_background_wallpaper_1680x1050.jpg") no-repeat fixed;
-    background-size: cover;
-    border-radius: 0 0 0 250px;
+.carousel-item-filter {
+    filter: brightness(50%);
 }
 
-.carousel-2 {
-    background: linear-gradient(#0008, #0008), url("https://media-we-cdn.oriflame.com/-/media/WE/Images/2022/CE/C3/beauty-edits-cms/b1-how-to-use-hybrid-make-up-to-achieve-a-radiant-look.ashx?u=0101010000&q=90") no-repeat fixed;
-    background-size: cover;
-    border-radius: 0 0 0 250px;
+.carousel-image-container {
+    display: inline-block;
+    position: relative;
 }
 
-.carousel-3 {
-    background: linear-gradient(#0008, #0008), url("https://academiaestrellas.com/wp-content/uploads/2016/04/bellezatodoslosdias.jpg") no-repeat fixed;
-    background-size: cover;
-    border-radius: 0 0 0 250px;
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
+
+.carousel-inner-radius {
+    border-radius: 0 0 0 350px;
+}
+
+.carousel-item-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+}
+
 
 .text-title h1 {
     font-size: 90px;
@@ -279,13 +291,8 @@ nav.navbar {
     width: 100px;
 }
 
-
-/*  */
-
-
 /* About title */
-
-.mision-vision-container .about-title {
+.cards-home .about-title {
     margin-bottom: 40px;
     text-align: center;
 }
@@ -329,12 +336,7 @@ nav.navbar {
        object-fit: cover;
 }
 
-
-/*  */
-
-
 /* Header buttons */
-
 .btn-welcome {
     width: 200px;
     padding: 10px 0;
@@ -361,9 +363,7 @@ nav.navbar {
             animation: animated .5s ease-in 1;
 }
 
-
-/*ABOUT US*/
-
+/* About us */
 .about {
     background-color: #fff;
     margin-top: 80px;
@@ -410,7 +410,6 @@ div.information>.title-profile,
 
 
 /*  Buttons animations */
-
 @-webkit-keyframes animated {
     from {
         box-shadow: 0 0 0 0 #620b8acc;
@@ -419,7 +418,6 @@ div.information>.title-profile,
         box-shadow: 0 0 0 40px #620b8a1e;
     }
 }
-
 @keyframes animated {
     from {
         box-shadow: 0 0 0 0 #620b8acc;
@@ -429,8 +427,6 @@ div.information>.title-profile,
     }
 }
 
-
-/* Events carousel */
 /* GALLERY TITLE */
 
 .title-gallery {
