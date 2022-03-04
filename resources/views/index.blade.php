@@ -1,9 +1,19 @@
 <x-common.layout title="León Arte y Moda">
+    <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner carousel-inner-radius carousel-image-container">
+            <div class="carousel-item carousel-item-img active">
+                <img src="https://www.10wallpaper.com/wallpaper/1680x1050/1407/beauty_fashion_woman-Photo_background_wallpaper_1680x1050.jpg" class="d-block w-100 carousel-item-filter" alt="img">ss
+            </div>
 
-    {{-- Main header --}}
-    <div class="carousel-1" id="carousel-header">
-        <div class="header">
-            <div class="row mx-5 mt-5 pt-5">
+            <div class="carousel-item carousel-item-img">
+                <img src="https://media-we-cdn.oriflame.com/-/media/WE/Images/2022/CE/C3/beauty-edits-cms/b1-how-to-use-hybrid-make-up-to-achieve-a-radiant-look.ashx?u=0101010000&q=90" class="d-block w-100 carousel-item-filter" alt="img">ss
+            </div>
+
+            <div class="carousel-item carousel-item-img">
+                <img src="https://academiaestrellas.com/wp-content/uploads/2016/04/bellezatodoslosdias.jpg" class="d-block w-100 carousel-item-filter" alt="img">
+            </div>
+
+            <div class="carousel-caption carousel-caption-header row mx-5 mt-5 pt-5">
                 <div class="col-4 text-title">
                     <h1>León Arte y Moda</h1>
                 </div>
@@ -25,25 +35,23 @@
             </div>
         </div>
     </div>
-    {{-- End Main header --}}
 
-    {{-- mision vision y valores --}}
-    <div class="vh-100 mision-vision-container d-flex flex-column justify-content-center">
-
+    <div class="vh-100 cards-home d-flex flex-column justify-content-center">
         <div class="about-title" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
             <h1 class="titles-home">¿Cuales son nuestras metas?</h1>
             <h1 class="subtitles-home">Conoce más sobre nosotros</h1>
         </div>
 
         <section class="d-flex justify-content-evenly">
-            <div class="text-center size-mvv shadow d-flex flex-column align-items-center justify-content-center"
-                data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="text-center size-mvv shadow d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                 <img src="{{ asset('images/fondo.jpg') }}" class="card-img-top" alt="...">
+
                 <h3 class="my-3 subtitle-mvv">Mision</h3>
+
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea
                     exercitationem
-                    quaerat iusto optio iure adipisci autem.</p>
-
+                    quaerat iusto optio iure adipisci autem.
+                </p>
             </div>
 
             <div class="text-center size-mvv shadow d-flex flex-column align-items-center justify-content-center"
@@ -52,7 +60,8 @@
                 <h3 class="my-3 subtitle-mvv">Vision</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea
                     exercitationem
-                    quaerat iusto optio iure adipisci autem.</p>
+                    quaerat iusto optio iure adipisci autem.
+                </p>
             </div>
 
             <div class="text-center size-mvv shadow d-flex flex-column align-items-center justify-content-center"
@@ -61,16 +70,11 @@
                 <h3 class="my-3 subtitle-mvv">Valores</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nobis nihil ea
                     exercitationem
-                    quaerat iusto optio iure adipisci autem.</p>
+                    quaerat iusto optio iure adipisci autem.
+                </p>
             </div>
-
-
         </section>
-
-
     </div>
-
-    {{--  --}}
 
     <div class="events">
         <div class="events-step">
@@ -80,7 +84,6 @@
             <div class="events-step__body">
                 <div class="step active" id="step-1">
                     <div class="step__body row">
-                        {{--  --}}
                         <div id="carouselExampleCaptions" class="carousel slide img-events col carousel-container"
                             data-bs-ride="carousel" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
 
@@ -109,7 +112,6 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        {{--  --}}
                         <div class="col p-3" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
                             <h3 class="step__subtitle">Pasarela moderna</h3>
                             <div class="information-events">
@@ -153,7 +155,7 @@
 
                     </div>
                     <div class="step__body row">
-                        {{--  --}}
+
                         <div id="carouselExampleCaptions2" class="carousel slide img-events col carousel-container "
                             data-bs-ride="carousel">
 
@@ -182,7 +184,6 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        {{--  --}}
                         <div class="col p-3">
                             <h3 class="step__subtitle">Fiesta Nocturna</h3>
                             <div class="information-events">
@@ -226,7 +227,6 @@
                     <div class="step__header">
                     </div>
                     <div class="step__body row">
-                        {{--  --}}
                         <div id="carouselExampleCaptions3" class="carousel slide img-events col carousel-container"
                             data-bs-ride="carousel">
 
@@ -255,7 +255,6 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        {{--  --}}
                         <div class="col p-3">
                             <h3 class="step__subtitle">Moda Playera</h3>
                             <div class="information-events">
@@ -296,7 +295,6 @@
             </div>
         </div>
     </div>
-    {{--  --}}
 
     <div class="about">
 
@@ -307,15 +305,19 @@
 
         <div class="row mx-5 information-container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <div class="col-8 information shadow">
-                <img src="https://images.ctfassets.net/lh3zuq09vnm2/yBDals8aU8RWtb0xLnPkI/19b391bda8f43e16e64d40b55561e5cd/How_tracking_user_behavior_on_your_website_can_improve_customer_experience.png"
-                    alt="Imagen de Misión">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/yBDals8aU8RWtb0xLnPkI/19b391bda8f43e16e64d40b55561e5cd/How_tracking_user_behavior_on_your_website_can_improve_customer_experience.png" alt="Imagen de Misión">
+
                 <h2 class="mb-3 title-profile">Juan Pablo Martinez Herrera</h2>
+
                 <p class="fs-5 text-profile">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, maiores
                     ex? Neque et magni provident quae distinctio, quisquam perferendis, voluptates accusamus doloremque
                     necessitatibus cum voluptatibus facere tempora aut repellat
                     illo? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="link-primary text-decoration-none fw-normal link-profile">Leer Más<i
-                        class="bi bi-arrow-right ms-2"></i></a>
+
+                <a href="#" class="link-primary text-decoration-none fw-normal link-profile">
+                    Leer Más
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -326,22 +328,5 @@
         <script>
             AOS.init();
         </script>
-
-        <script>
-            setInterval('CarouselHeader()', 5000);
-
-            function CarouselHeader() {
-                var elemento = document.getElementById("carousel-header");
-
-                if (elemento.className == "carousel-1") {
-                    elemento.className = "carousel-2";
-                } else if (elemento.className == "carousel-2") {
-                    elemento.className = "carousel-3";
-                } else {
-                    elemento.className = "carousel-1";
-                }
-            }
-        </script>
-
-        </x-slot>
+    </x-slot>
 </x-common.layout>
