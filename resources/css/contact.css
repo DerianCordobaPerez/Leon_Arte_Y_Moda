@@ -1,16 +1,7 @@
 /* HEADER CONTACT US */
-.header__contact {
-    width: 100%;
-    min-height: 80vh;
-    background-image: url('https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/271554328_154246760276422_7525582486259297642_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=e3f864&_nc_ohc=ioyTERGOKiMAX_OEgjh&_nc_ht=scontent-mia3-2.xx&oh=00_AT-eh7k91eO0epP8skIynQ2s7p-EtbDQ-EcReEUK2K9ByA&oe=62204AD2');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    position: relative;
-}
+
+
+/* .header__contact {} */
 
 .title__contact-us {
     color: #8C339F;
@@ -18,16 +9,12 @@
     font-style: italic;
     font-weight: bold;
     background: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
 }
 
+
 /* CONTAINER CARDS CONTACT US */
+
 .cards__contact {
-    position: relative;
-    top: -90px;
     display: grid;
     grid-template-columns: repeat(4, 250px);
     gap: 20px;
@@ -36,6 +23,7 @@
 
 
 /* CARDS CONTACT US */
+
 .contact__items {
     width: 100%;
     height: 180px;
@@ -94,15 +82,46 @@ span {
 }
 
 
+/* SOCIAL NETWORK  */
+
+.title-network-contact {
+    color: #8C339F;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.social-network-contact {
+    margin: 40px 0;
+}
+
+.social-network-contact ul li {
+    color: #fff;
+    background: #8C339F;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0 15px;
+    border: outset;
+    border-radius: 10px;
+}
+
+.social-network-contact ul li i {
+    font-size: 40px;
+}
+
+
 /* CONTAINER FORM */
+
 .container__form {
     width: 100%;
     display: flex;
     height: 90vh;
+    padding: 50px;
 }
 
 
 /* FORM CONTACT */
+
 .form__contact {
     width: 60%;
     height: 100%;
@@ -117,7 +136,10 @@ span {
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    color: #8C339F;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .input__name--contact,
@@ -125,10 +147,10 @@ span {
 .input__message--contact {
     width: 100%;
     outline: none;
-    border: none;
-    /* border-bottom: 4px solid #670b6aaa; */
-    border-bottom: 4px solid #0006;
-    background-color: #eee;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    /* border-bottom: 4px solid #0006; */
+    /* background-color: #eee; */
     padding: 10px 5px;
     font-size: 18px;
 }
@@ -155,7 +177,7 @@ span {
     height: 40px;
     border: none;
     border-radius: 32px;
-    background-color: #000c;
+    background-color: #8C339F;
     color: #fff;
     font-size: 18px;
 }
@@ -166,6 +188,7 @@ span {
 
 
 /* FOLLOW US */
+
 .follow-us__contact {
     width: 100%;
     margin-top: 50px;
@@ -196,6 +219,7 @@ span {
 
 
 /* CONTACT MAP */
+
 .contact__map {
     width: 100%;
     height: 100%;
@@ -203,46 +227,19 @@ span {
 }
 
 
-/* RESPONSIVE DESIGN */
-@media only screen and (max-width: 992px) {
-    .cards__contact {
-        grid-template-columns: repeat(4, 200px);
-        gap: 10px;
-    }
-    .contact__items {}
+/* contact section */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-    .title__contact-us {
-        font-size: 70px;
-    }
-    .cards__contact {
-        grid-template-columns: repeat(2, 250px);
-    }
-    .container__form {
-        display: block;
-    }
-    .form__contact {
-        width: 100%;
-        margin-bottom: 40px;
-        height: auto;
-    }
-}
 
-@media only screen and (max-width: 600px) {
-    .header__contact {
-        display: flex;
-        background-size: contain;
-        min-height: 60vh;
-    }
-    .title__contact-us {
-        font-size: 40px;
-        top: 30%;
-    }
-    .cards__contact {
-        display: block;
-    }
-    .contact__items {
-        margin-top: 20px;
-    }
+/*  */
+
+.scroll-mandatory {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
