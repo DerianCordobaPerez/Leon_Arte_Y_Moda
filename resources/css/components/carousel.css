@@ -8,11 +8,13 @@
 
 .carousel-item-filter {
     filter: brightness(50%);
+    /* background-attachment: fixed; */
 }
 
 .carousel-image-container {
     display: inline-block;
     position: relative;
+    /* background-attachment: fixed; */
 }
 
 .carousel-inner-radius {
@@ -20,8 +22,6 @@
 }
 
 .carousel-item-img {
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 60rem;
 }
 
@@ -33,20 +33,17 @@
     transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1366px) {
     .carousel-caption {
-        transform: translate(-50%, -70%);
+        transform: translate(-50%, -60%);
     }
-
     .carousel-item-img {
         background-repeat: no-repeat;
         background-size: cover;
-        height: 40rem;
+        height: 100vh;
     }
-
     .text-title {
         font-size: 5px;
         color: #fff;
     }
 }
-

@@ -2070,8 +2070,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_events_in_step__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_utils_events_in_step__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _utils_counter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/counter */ "./resources/js/utils/counter.js");
 /* harmony import */ var _utils_counter__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_utils_counter__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _utils_gallery_preview__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils/gallery-preview */ "./resources/js/utils/gallery-preview.js");
-/* harmony import */ var _utils_gallery_preview__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_utils_gallery_preview__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _utils_slideshow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils/slideshow */ "./resources/js/utils/slideshow.js");
+/* harmony import */ var _utils_slideshow__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_utils_slideshow__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _utils_gallery_preview__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utils/gallery-preview */ "./resources/js/utils/gallery-preview.js");
+/* harmony import */ var _utils_gallery_preview__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_utils_gallery_preview__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -2266,6 +2269,23 @@ window.addEventListener("scroll", function () {
   var nav = document.querySelector("nav");
   nav.classList.toggle("navbar-scroll", window.scrollY > 0);
 });
+
+/***/ }),
+
+/***/ "./resources/js/utils/slideshow.js":
+/*!*****************************************!*\
+  !*** ./resources/js/utils/slideshow.js ***!
+  \*****************************************/
+/***/ (() => {
+
+var root = document.documentElement;
+var marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+var marqueeContent = document.querySelector("ul.marquee-content");
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for (var i = 0; i < marqueeElementsDisplayed; i++) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
 
 /***/ }),
 
