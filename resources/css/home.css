@@ -1,5 +1,4 @@
 @import "components/carousel.css";
-
 .text-title {
     font-size: 90px;
     color: #fff;
@@ -11,7 +10,9 @@
     width: 100px;
 }
 
+
 /* About title */
+
 .cards-home .about-title {
     margin-bottom: 40px;
     text-align: center;
@@ -55,7 +56,9 @@
     object-fit: cover;
 }
 
+
 /* Header buttons */
+
 .btn-welcome {
     width: 200px;
     padding: 10px 0;
@@ -81,7 +84,9 @@
     animation: animated .5s ease-in 1;
 }
 
+
 /* About us */
+
 .about {
     background-color: #fff;
     margin-top: 80px;
@@ -126,8 +131,14 @@ div.information>.title-profile,
     margin-left: 100px;
 }
 
+.header-home {
+    height: 100vh;
+    width: 100%;
+}
+
 
 /*  Buttons animations */
+
 @keyframes animated {
     from {
         box-shadow: 0 0 0 0 #620b8acc;
