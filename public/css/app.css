@@ -261,14 +261,6 @@ nav.navbar {
     position: relative;
 }
 
-.carousel-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
 .carousel-inner-radius {
     border-radius: 0 0 0 350px;
 }
@@ -279,8 +271,33 @@ nav.navbar {
     height: 60rem;
 }
 
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
 
-.text-title h1 {
+@media screen and (max-width: 768px) {
+    .carousel-caption {
+        transform: translate(-50%, -70%);
+    }
+
+    .carousel-item-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40rem;
+    }
+
+    .text-title {
+        font-size: 5px;
+        color: #fff;
+    }
+}
+
+
+.text-title {
     font-size: 90px;
     color: #fff;
 }
@@ -647,7 +664,6 @@ button:hover {
 
 .main-content .description {}
 /* HEADER CONTACT US */
-
 .header__contact {
     width: 100%;
     min-height: 80vh;
@@ -673,16 +689,7 @@ button:hover {
     transform: translate(-50%);
 }
 
-
-/* MAIN CONTACT US */
-
-.main__contact {
-    /* position: relative; */
-}
-
-
 /* CONTAINER CARDS CONTACT US */
-
 .cards__contact {
     position: relative;
     top: -90px;
@@ -694,7 +701,6 @@ button:hover {
 
 
 /* CARDS CONTACT US */
-
 .contact__items {
     width: 100%;
     height: 180px;
@@ -754,7 +760,6 @@ span {
 
 
 /* CONTAINER FORM */
-
 .container__form {
     width: 100%;
     display: flex;
@@ -763,7 +768,6 @@ span {
 
 
 /* FORM CONTACT */
-
 .form__contact {
     width: 60%;
     height: 100%;
@@ -824,21 +828,17 @@ span {
     height: 40px;
     border: none;
     border-radius: 32px;
-    /* background-color: #670b6acc; */
     background-color: #000c;
     color: #fff;
     font-size: 18px;
 }
 
 .input__send--contact:hover {
-    /* background-color: #6d1170; */
-    /* background-color: #670b6a; */
     background-color: #000;
 }
 
 
 /* FOLLOW US */
-
 .follow-us__contact {
     width: 100%;
     margin-top: 50px;
@@ -869,7 +869,6 @@ span {
 
 
 /* CONTACT MAP */
-
 .contact__map {
     width: 100%;
     height: 100%;
@@ -878,7 +877,6 @@ span {
 
 
 /* RESPONSIVE DESIGN */
-
 @media only screen and (max-width: 992px) {
     .cards__contact {
         grid-template-columns: repeat(4, 200px);
@@ -921,6 +919,7 @@ span {
         margin-top: 20px;
     }
 }
+
 /* Bootstrap */
 
 /* Components */
@@ -932,6 +931,7 @@ span {
 /* AOS */
 
 /* Font */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -942,3 +942,4 @@ span {
 body {
     overflow-x: hidden;
 }
+

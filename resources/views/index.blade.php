@@ -2,11 +2,11 @@
     <div class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner carousel-inner-radius carousel-image-container">
             <div class="carousel-item carousel-item-img active">
-                <img src="https://www.10wallpaper.com/wallpaper/1680x1050/1407/beauty_fashion_woman-Photo_background_wallpaper_1680x1050.jpg" class="d-block w-100 carousel-item-filter" alt="img">ss
+                <img src="https://www.10wallpaper.com/wallpaper/1680x1050/1407/beauty_fashion_woman-Photo_background_wallpaper_1680x1050.jpg" class="d-block w-100 carousel-item-filter" alt="img">
             </div>
 
             <div class="carousel-item carousel-item-img">
-                <img src="https://media-we-cdn.oriflame.com/-/media/WE/Images/2022/CE/C3/beauty-edits-cms/b1-how-to-use-hybrid-make-up-to-achieve-a-radiant-look.ashx?u=0101010000&q=90" class="d-block w-100 carousel-item-filter" alt="img">ss
+                <img src="https://media-we-cdn.oriflame.com/-/media/WE/Images/2022/CE/C3/beauty-edits-cms/b1-how-to-use-hybrid-make-up-to-achieve-a-radiant-look.ashx?u=0101010000&q=90" class="d-block w-100 carousel-item-filter" alt="img">
             </div>
 
             <div class="carousel-item carousel-item-img">
@@ -14,8 +14,8 @@
             </div>
 
             <div class="carousel-caption carousel-caption-header row mx-5 mt-5 pt-5">
-                <div class="col-4 text-title">
-                    <h1>León Arte y Moda</h1>
+                <div class="col-4">
+                    <h1 class="text-title">León Arte y Moda</h1>
                 </div>
 
                 <div class="col-8 text-white text-center">
