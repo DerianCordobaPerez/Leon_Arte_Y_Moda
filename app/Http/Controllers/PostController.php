@@ -65,7 +65,10 @@ class PostController extends Controller
 
             $post->pictures()->attach($request->pictures);
 
-            return redirect()->route('posts.index')->with('success', 'Publicación creada con éxito');
+            session()->flash('alert-message', 'Publicación creada con éxito');
+            session()->flash('alert-type', 'success');
+
+            return redirect()->route('posts.index');
         });
     }
 

@@ -15,14 +15,6 @@
     position: relative;
 }
 
-.carousel-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
 .carousel-inner-radius {
     border-radius: 0 0 0 350px;
 }
@@ -31,5 +23,30 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 60rem;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption {
+        transform: translate(-50%, -70%);
+    }
+
+    .carousel-item-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40rem;
+    }
+
+    .text-title {
+        font-size: 5px;
+        color: #fff;
+    }
 }
 
